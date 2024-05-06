@@ -12,7 +12,7 @@ uids = objaverse.load_uids()
 random_object_uids = random.sample(uids, 10)
 
 
-objaverse._VERSIONED_PATH = "./val"
+objaverse._VERSIONED_PATH = "/home/volt_zhou/val"
 valobjects = objaverse.load_objects(
     uids=random_object_uids,
     
@@ -26,7 +26,7 @@ random.seed(42)
 random_object_uids = random.sample(uids, 30)
 
 
-objaverse._VERSIONED_PATH = "./train"
+objaverse._VERSIONED_PATH = "/home/volt_zhou/train"
 trainobjects = objaverse.load_objects(
     uids=random_object_uids,
     
