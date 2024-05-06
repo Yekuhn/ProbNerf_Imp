@@ -39,5 +39,5 @@ def decompress_json(input_path, output_path):
     with gzip.open(input_path, 'rt') as gz_file, open(output_path, 'w') as json_file:
         json.dump(json.load(gz_file), json_file, indent=4)
         
-decompress_json('./val/object-paths.json.gz', './val/object-paths.json')
-decompress_json('./train/object-paths.json.gz', './train/object-paths.json')
+decompress_json('/home/volt_zhou/val/object-paths.json.gz', '/home/volt_zhou/val/object-paths.json')
+decompress_json('/home/volt_zhou/train/object-paths.json.gz', '/home/volt_zhou/train/object-paths.json')
