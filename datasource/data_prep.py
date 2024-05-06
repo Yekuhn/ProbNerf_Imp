@@ -11,7 +11,7 @@ random.seed(21)
 
 uids = objaverse.load_uids()
 # Validation Dataset Size
-s_size = 5
+s_size = 15
 random_object_uids = random.sample(uids, s_size)
 
 
@@ -30,7 +30,7 @@ print(valobjects)
 random.seed(42)
 
 # Training Dataset Sample Size
-s_size = 5
+s_size = 15
 random_object_uids = random.sample(uids, s_size)
 
 # Training Dataset Download Directory
@@ -51,4 +51,35 @@ def decompress_json(input_path, output_path):
 
 decompress_json('/home/volt_zhou/val/object-paths.json.gz', '/home/volt_zhou/val/object-paths.json')
 decompress_json('/home/volt_zhou/train/object-paths.json.gz', '/home/volt_zhou/train/object-paths.json')
+
+# Generate UID Json file
+import os
+import json
+
+def list_folder_ids(directory_path):
+    """ List all folder IDs in the specified directory. """
+    return [f for f in os.listdir(directory_path) if os.path.isdir(os.path.join(directory_path, f))]
+
+def write_ids_to_json(file_path, ids):
+    """ Write the list of IDs to a JSON file. """
+    with open(file_path, 'w') as json_file:
+        json.dump(ids, json_file, indent=4)
+
+# Set the directory path where your folders are stored
+val_path = '/home/volt_zhou/val/gbl'
+train_path = '/home/volt_zhou/train/gbl'
+
+# Set the path for the JSON file where IDs will be saved
+val_path_render = '/home/volt_zhou/val/'
+train_path_render = '/home/volt_zhou/train/'
+
+# Get the list of folder IDs
+val_uids = list_folder_ids(val_path)
+train_uids = list_folder_ids(train_path)
+
+# Write the folder IDs to a JSON file
+write_ids_to_json(val_path_render , val_uids)
+write_ids_to_json(train_path_render , train_uids)
+
+print("Folder IDs have been written to JSON file.")
 

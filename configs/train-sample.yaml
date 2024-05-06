@@ -24,8 +24,8 @@ dataset:
             root_dirs:
                 - "/home/volt_zhou/ProbNerf_Imp/renderoutput"
             meta_path:
-                train: "/home/volt_zhou/train/object-paths.json"
-                val: "/home/volt_zhou/val/object-paths.json"
+                train: "/home/volt_zhou/train/train_uids.json"
+                val: "/home/volt_zhou/val/val_uids.json"
             sample_rate: 1.0
     sample_side_views: 3
     source_image_res: 224
