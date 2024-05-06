@@ -9,6 +9,7 @@ model:
     camera_embed_dim: 1024
     rendering_samples_per_ray: 96
     triplane_generate_dim: 512
+    gaussian_dim: 128
     triplane_low_res: 32
     triplane_high_res: 64
     triplane_dim: 32
