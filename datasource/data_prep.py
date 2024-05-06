@@ -66,8 +66,8 @@ def write_ids_to_json(file_path, ids):
         json.dump(ids, json_file, indent=4)
 
 # Set the directory path where your folders are stored
-val_path = '/home/volt_zhou/val/gbl'
-train_path = '/home/volt_zhou/train/gbl'
+val_path = '/home/volt_zhou/val/glbs'
+train_path = '/home/volt_zhou/train/glbs'
 
 # Set the path for the JSON file where IDs will be saved
 val_path_render = '/home/volt_zhou/val/'
