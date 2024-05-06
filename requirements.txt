@@ -24,4 +24,7 @@ requests
 tqdm
 typing
 objaverse
+boto3
+wandb
+tyro==0.3.38
 
