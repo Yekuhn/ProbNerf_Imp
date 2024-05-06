@@ -28,7 +28,7 @@ from accelerate.logging import get_logger
 import pyro
 import pyro.infer.mcmc as mcmc
 from pyro.infer.mcmc import HMC, MCMC
-from .temperature_schedule import temperature_annealing
+from .temperature import temperature_annealing
 
 
 from .base_inferrer import Inferrer
