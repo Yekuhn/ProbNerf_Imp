@@ -70,8 +70,8 @@ val_path = '/home/volt_zhou/val/glbs'
 train_path = '/home/volt_zhou/train/glbs'
 
 # Set the path for the JSON file where IDs will be saved
-val_path_render = '/home/volt_zhou/val/'
-train_path_render = '/home/volt_zhou/train/'
+val_path_render = '/home/volt_zhou/val/val_uids.json'
+train_path_render = '/home/volt_zhou/train/train_uids.json'
 
 # Get the list of folder IDs
 val_uids = list_folder_ids(val_path)
