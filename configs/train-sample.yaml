@@ -22,10 +22,10 @@ dataset:
     subsets:
         -   name: objaverse
             root_dirs:
-                - "home/volt_zhou/ProbNerf_Imp/renderoutput"
+                - "/home/volt_zhou/ProbNerf_Imp/renderoutput"
             meta_path:
-                train: "home/volt_zhou/ProbNerf_Imp/datasource/train/object-paths.json"
-                val: "home/volt_zhou/ProbNerf_Imp/datasource/val/object-paths.json"
+                train: "/home/volt_zhou/ProbNerf_Imp/datasource/train/object-paths.json"
+                val: "/home/volt_zhou/ProbNerf_Imp/datasource/val/object-paths.json"
             sample_rate: 1.0
     sample_side_views: 3
     source_image_res: 224
